@@ -1,2 +1,3 @@
-# byrne.family-terraform
-Setup for byrne.family
+# Terraform for byrne.team
+
+Setup for byrne.team and its resources.

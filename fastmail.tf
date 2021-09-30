@@ -42,6 +42,6 @@ resource "dnsimple_record" "dkim" {
 
   domain = local.hostname
   name   = "fm${count.index + 1}._domainkey"
-  value  = "fm${count.index + 1}.byrne.family.dkim.fmhosted.com"
+  value  = "fm${count.index + 1}.byrne.team.dkim.fmhosted.com"
   type   = "CNAME"
 }
