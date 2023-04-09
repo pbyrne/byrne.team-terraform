@@ -1,5 +1,19 @@
 module "fastmail-dns" {
   source = "github.com/pbyrne/terraform-fastmail-dnsimple"
 
-  apex = "byrne.team"
+  apex = var.apex
+}
+
+resource "dnsimple_zone_record" "bucket-files" {
+  name      = "bucket-files"
+  type      = "CNAME"
+  value     = "web.messagingengine.com"
+  zone_name = var.apex
+}
+
+resource "dnsimple_zone_record" "bucket-inbox" {
+  name      = "bucket-inbox"
+  type      = "CNAME"
+  value     = "web.messagingengine.com"
+  zone_name = var.apex
 }

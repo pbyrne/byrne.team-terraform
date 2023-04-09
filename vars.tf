@@ -1,6 +1,4 @@
-locals {
-  hostname     = "byrne.team"
-  mx-primary   = "in1-smtp.messagingengine.com"
-  mx-secondary = "in2-smtp.messagingengine.com"
-  spf          = "v=spf1 include:spf.messagingengine.com ?all"
+variable "apex" {
+  default     = "byrne.team"
+  description = "Apex domain managed by this Terraform project"
 }
