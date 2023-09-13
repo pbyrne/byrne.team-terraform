@@ -18,3 +18,4 @@ resource "dnsimple_zone_record" "patrick-bluesky-verification" {
   value     = "did=did:plc:krtm6dltju5ikaqwvca24sa5"
   type      = "TXT"
 }
+
